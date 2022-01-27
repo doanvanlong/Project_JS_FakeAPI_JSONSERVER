@@ -1,0 +1,162 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Quần",
+      "sub_categories": [
+        {
+          "id": 1,
+          "name": "Quần Tây"
+        },
+        {
+          "id": 2,
+          "name": "Quần Rin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Áo",
+      "sub_categories": [
+        {
+          "id": 1,
+          "name": "Áo thun"
+        },
+        {
+          "id": 2,
+          "name": "Áo sơ mi"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "code": "P0001",
+      "name": "Áo thun nam - Xanh",
+      "price": 260000,
+      "categories_id": 2,
+      "sub_categories_id": 1,
+      "sale":20,
+      "quantity":30,
+      "description": "Áo thun nam 2022 mới nhất",
+      "more": {
+        "color": "xanh",
+        "stuff": "Cotton"
+      }
+    },
+    {
+      "id": 2,
+      "code": "P0002",
+      "name": "Áo thun nam - Đỏ",
+      "price": 260000,
+      "categories_id": 2,
+      "sub_categories_id": 1,
+      "description": "Áo thun nam 2022 mới nhất",
+      "more": {
+        "color": "đỏ",
+        "stuff": "Cotton"
+      }
+    },
+    {
+      "id": 1,
+      "code": "P0003",
+      "name": "Áo sơ mi - Xanh",
+      "price": 260000,
+      "categories_id": 2,
+      "sub_categories_id": 2,
+      "description": "Áo sơ mi 2022 mới nhất",
+      "more": {
+        "color": "xanh",
+        "stuff": "Cotton"
+      }
+    },
+    {
+      "id": 1,
+      "code": "P0004",
+      "name": "Áo thun nam - Xanh",
+      "price": 260000,
+      "categories_id": 2,
+      "sub_categories_id": 1,
+      "description": "Áo thun nam 2022 mới nhất",
+      "more": {
+        "color": "xanh",
+        "stuff": "Cotton"
+      }
+    }
+  ],
+  "users":[
+    {
+      "id":1,
+      "name": "Long Đoàn",
+      "email":"Longdvpd05236@fpt.edu.vn",
+      "password":"123",
+      "phone":84378854216,
+      "address":"Quảng Nam",
+      "role":0
+    },
+    {
+      "id":2,
+      "name": "Admin",
+      "email":"longdv@gmail.com",
+      "password":"123",
+      "phone":84378854216,
+      "address":"Quảng Nam",
+      "role":1
+    }
+  ],
+  "comments":[
+    {
+      "id": 1,
+      "content":"Sản phẩm đẹp",
+      "user_id":2,
+      "rating":4,
+      "comment_date":"2022/01/20"
+    },
+    {
+      "id": 2,
+      "content":"Sản phẩm chất lượng",
+      "user_id":2,
+      "rating":5,
+      "comment_date":"2022/01/18"
+    }
+  ]
+  ,"orders":[
+    {
+      "id": 1,
+      "user_id":2,
+      "order_status":"chuaxacnhan",
+      "money_total":300000,
+      "order_date":"2022/01/20",
+      "delivery_date":"2022/01/25"
+    }, {
+      "id":2,
+      "user_id":2,
+      "order_status":"daxacnhan",
+      "money_total":400000,
+      "order_date":"2022/01/21",
+      "delivery_date":""
+    }
+  ],
+  "orders_detail":[
+    {
+      "id": 1,
+      "order_id":1,
+      "product_id":1,
+      "quantity_purchased":1,
+      "price": 260000,
+      "color":"Xanh",
+      "size":"M"
+    },
+    {
+      "id": 2,
+      "order_id":1,
+      "product_id":2,
+      "quantity_purchased":1,
+      "price": 260000,
+      "color":"Đỏ",
+      "size":"L"
+    }
+  ]
+
+}
