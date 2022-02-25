@@ -6196,7 +6196,18 @@ ul#shipping_method {
 .product-img-wrap{
     height:382.5px;
 }
-
+.img_skeleton{
+  height:340px;
+  width:255px;
+}
+.img_skeleton_detail_main{
+  height:720px;
+  width:540px;
+}
+.img_skeleton_details{
+  height: 86px;
+  width:65px;
+}
 .skeleton {
     opacity: .8;
   animation: skeleton-loading 1s linear infinite alternate;
@@ -6215,4 +6226,8 @@ ul#shipping_method {
   to {
     background-color: hsl(200, 20%, 89%);
   }
+}
+
+
+.btn-primary{
 }

@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Philos | Đăng nhập </title>
@@ -21,6 +21,9 @@
     <link href="public/client-assets/css/plugins/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- fontawesome css -->
     <link href="public/client-assets/css/plugins/animate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.8/sweetalert2.min.css"
+        integrity="sha512-ZCCAQejiYJEz2I2a9uYA3OrEMr8ZN4BGTwlVYNxsYopLS/WH2bey53SObOKRF4ciHo5gqxgVP/muDloHvWZXHw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- animate css -->
     <link href="public/client-assets/css/style.css" rel="stylesheet" type="text/css" />
     <!-- template css -->
@@ -28,6 +31,7 @@
     <!-- Slider Revolution Css Setting -->
 
 </head>
+
 <body>
 
     <!-- Newsletter Popup ---------------------------------------------------->
@@ -116,7 +120,7 @@
 
                     <!-- Cart Total -->
                     <h4 class="cart-total-hedding normal"><span>Tổng :</span><span
-                            class="cart-total-price">$698.00</span></h4>
+                            class="cart-total-price"></span></h4>
                     <!-- Cart Total -->
 
                     <!-- Cart Buttons -->
@@ -177,31 +181,9 @@
                     <!--Topbar Right-->
                     <div class="topbar-right">
                         <ul class="list-none">
+
                             <li>
-                                <a href="login-register.html"><i class="fa fa-lock left" aria-hidden="true"></i><span
-                                        class="hidden-sm-down">Đăng nhập</span></a>
-                            </li>
-                            <li class="dropdown-nav">
-                                <a href="login-register.html"><i class="fa fa-user left" aria-hidden="true"></i><span
-                                        class="hidden-sm-down">Tài khoản của tôi</span><i class="fa fa-angle-down right"
-                                        aria-hidden="true"></i></a>
-                                <!--Dropdown-->
-                                <div class="dropdown-menu">
-                                    <ul>
-                                        <li><a href="login-register.html">Tài khoản của tôi</a></li>
-                                        <li><a href="#">Đơn hàng của tôi</a></li>
-                                        <li><a href="#">Sản phẩm yêu thích</a></li>
-                                        <li><a href="checkout.html">Thanh toán</a></li>
-                                    </ul>
-                                    <span class="divider"></span>
-                                    <ul>
-                                        <li><a href="login-register.html"><i class="fa fa-lock left"
-                                                    aria-hidden="true"></i>Đăng nhập</a></li>
-                                        <li><a href="login-register.html"><i class="fa fa-user left"
-                                                    aria-hidden="true"></i>Đăng ký</a></li>
-                                    </ul>
-                                </div>
-                                <!--End Dropdown-->
+                                <a href="myorders.html">Đơn hàng</a>
                             </li>
 
                             <li>
@@ -273,27 +255,22 @@
                                 <a href="index.html">Trang chủ</a>
                             </li>
                             <li>
-                                <a href="shop_grid.html">Sản phẩm khuyến mãi <span class="nav-label-sale"></span></a>
+                                <a href="product-sale.html">Sản phẩm khuyến mãi <span class="nav-label-sale"></span></a>
                                 <!-- Drodown Menu ------->
-                              
+
                                 <!-- End Drodown Menu -->
                             </li>
                             <li>
-                                <a href="shop_grid.html">Áo Nam</a>
+                                <a href="ao_nam.html">Áo Nam</a>
                                 <!-- Drodown Menu ------->
-                               
+
                                 <!-- End Drodown Menu -->
                             </li>
 
                             <li>
-                                <a href="shop_grid.html">Quần Nam</a>
+                                <a href="quan_nam.html">Quần Nam</a>
                             </li>
-                            <li>
-                                <a href="#">Phụ kiện</a>
-                                <!-- Drodown Menu ------->
-                              
-                                <!-- End Drodown Menu -->
-                            </li>
+                           
                         </ul>
                     </nav>
                     <!-- End Navigation Menu -->
@@ -332,14 +309,23 @@
                                     <p>Vui lòng điền thông tin đăng nhập!</p>
                                     <div class="form-field-wrapper">
                                         <label>Nhập Email <span class="required">*</span></label>
-                                        <input id="author-email" class="input-md form-full-width" name="author" placeholder="Nhập email của bạn" value="" size="30" aria-required="true" required="" type="email">
+                                        <input id="author-email-login" class="input-md form-full-width" name="author"
+                                            placeholder="Nhập email của bạn" value="" size="30" aria-required="true"
+                                            required="" type="email">
+                                            <small id="errEmailLogin" class="text-danger"></small>
                                     </div>
                                     <div class="form-field-wrapper">
                                         <label>Nhập Password <span class="required">*</span></label>
-                                        <input id="author-pass" class="input-md form-full-width" name="author-pass" placeholder="Nhập mật khẩu của bạn" value="" size="30" aria-required="true" required="" type="password">
+                                        <input id="author-pass-login" class="input-md form-full-width"
+                                            name="author-pass" placeholder="Nhập mật khẩu của bạn" value="" size="30"
+                                            aria-required="true" required="" type="password">
+                                            <small id="errPassLogin" class="text-danger"></small>
+
                                     </div>
                                     <div class="form-field-wrapper">
-                                        <input name="submit" id="submit" class="submit btn btn-md btn-black" value="Đăng nhập" type="submit">
+                                        <input name="submit" id="submit_login" class="submit btn btn-md btn-black"
+                                            value="Đăng nhập" type="submit">
+
                                     </div>
                                 </form>
                             </div>
@@ -348,9 +334,12 @@
                             <div class="form-border-box">
                                 <form>
                                     <h2 class="normal"><span>Bạn chưa có tài khoản</span></h2>
-                                    <p>Vui lòng tạo tài khoản mới để nhận thông tin và hàng nghìn điều đặc biệt khác ...</p>
+                                    <p>Vui lòng tạo tài khoản mới để nhận thông tin và hàng nghìn điều đặc biệt khác ...
+                                    </p>
                                     <div class="form-field-wrapper">
-                                        <input name="submit" id="submit1" class="submit btn btn-md btn-color" value="Tạo một tài khoản" type="submit">
+                                        <button class="px-4 py-3" style="background-color: #34b79d;
+                                        border-color: transparent;
+                                        color: #fff !important;"> <a href="register.html" >Đăng ký</a></button>
                                     </div>
                                 </form>
                             </div>
@@ -394,18 +383,17 @@
                                 <li><a href="#">Thông tin giao hàng</a></li>
                                 <li><a href="#">Điều khoản & điều kiện</a></li>
                                 <li><a href="#">Chính sách bảo mật</a></li>
-                             
+
                             </ul>
                         </div>
                     </div>
-                  
+
                     <div class="col-lg-3 col-md-4 col-sm-4 mb-sm-45">
                         <div class="footer-block extra-block">
                             <h6>Danh mục</h6>
                             <ul>
                                 <li><a href="#">Áo nam</a></li>
                                 <li><a href="#">Quần nam </a></li>
-                                <li><a href="#">Phụ kiện</a></li>
                                 <li><a href="#">Quần tây</a></li>
                                 <li><a href="#">Áo sơ mi</a></li>
                             </ul>
@@ -415,7 +403,8 @@
                         <div class="footer-block contact-block">
                             <h6>Liên hệ</h6>
                             <ul>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>137 Nguyễn Thị Thập - Liên Chiểu -TP Đà Nẵng
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>137 Nguyễn Thị Thập - Liên Chiểu
+                                    -TP Đà Nẵng
                                     <br>
                                 </li>
                                 <li><i class="fa fa-envelope" aria-hidden="true"></i><a
@@ -445,8 +434,8 @@
             <!-- Footer Copyright -->
             <div class="container">
                 <div class="copyrights">
-                    <p class="copyright">&copy; Coppyright <a href=""
-                            target="_blank">Philos</a>. Assignment Javascript nâng cao</p>
+                    <p class="copyright">&copy; Coppyright <a href="" target="_blank">Philos</a>. Assignment Javascript
+                        nâng cao</p>
                     <p class="payment">
                         <img src="public/client-assets/img/payment_logos.png" alt="payment">
                     </p>
@@ -467,26 +456,38 @@
     <!-- jquery library js -->
     <script type="text/javascript" src="public/client-assets/js/plugins/modernizr.js"></script>
     <!--modernizr Js-->
-    <script type="text/javascript" src="public/client-assets/plugins/rev_slider/js/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript" src="public/client-assets/plugins/rev_slider/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="public/client-assets/plugins/rev_slider/js/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="public/client-assets/plugins/rev_slider/js/revolution.extension.parallax.min.js"></script>
-    <script type="text/javascript" src="public/client-assets/plugins/rev_slider/js/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="public/client-assets/plugins/rev_slider/js/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript"
+        src="public/client-assets/plugins/rev_slider/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript"
+        src="public/client-assets/plugins/rev_slider/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript"
+        src="public/client-assets/plugins/rev_slider/js/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript"
+        src="public/client-assets/plugins/rev_slider/js/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript"
+        src="public/client-assets/plugins/rev_slider/js/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript"
+        src="public/client-assets/plugins/rev_slider/js/revolution.extension.layeranimation.min.js"></script>
     <!--Slider Revolution Js File-->
     <script type="text/javascript" src="public/client-assets/js/plugins/tether.min.js"></script>
     <!--Bootstrap tooltips require Tether (Tether Js)-->
     <script type="text/javascript" src="public/client-assets/js/plugins/bootstrap.min.js"></script>
     <!-- bootstrap js -->
-    <script type="text/javascript" src="public/client-assets/js/plugins/owl.carousel.js"></script>
     <!-- carousel js -->
-    <script type="text/javascript" src="public/client-assets/js/plugins/slick.js"></script>
     <!-- Slick Slider js -->
     <script type="text/javascript" src="public/client-assets/js/plugins/plugins-all.js"></script>
     <!-- Plugins All js -->
     <script type="text/javascript" src="public/client-assets/js/custom.js"></script>
+    <script type="module" src="public/client-assets/js/api.js"></script>
+    <script type="module" src="public/client-assets/js/cart.js "></script>
+
+    <script type="module" src="public/client-assets/js/login_register.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
     <!-- custom js -->
     <!-- end jquery -->
 
 </body>
+
 </html>
