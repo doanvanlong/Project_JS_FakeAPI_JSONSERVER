@@ -144,9 +144,7 @@
                             <li>
                                 <a href="myorders.html">Đơn hàng</a>
                             </li>
-                            <li>
-                                <a href="about.html">Giới thiệu</a>
-                            </li>
+                            
                             <li>
                                 <a href="contact.html">Liên hệ</a>
                             </li>
@@ -184,7 +182,7 @@
                                 </li>
 
                                 <!-- Whishlist-->
-                                <li><a class="js_whishlist-btn"><i aria-hidden="true" class="fa fa-heart"></i><span
+                                <li><a  href="product_love.html" class="js_whishlist-btn"><i aria-hidden="true" class="fa fa-heart"></i><span
                                             class="countTip">10</span></a></li>
 
                                 <!-- Cart-->
@@ -325,7 +323,7 @@
                                         itemtype="http://schema.org/Rating" title="Rated 4 out of 5">
                                         <span style="width: 60%"></span>
                                     </div>
-                                    <a href="#" class="product-rating-count"><span class="count">3</span> Reviews</a>
+                                    <a href="#" class="product-rating-count"><span class="count count_commnets_detail">3</span> Đánh giá</a>
                                 </div>
                                 <div class="product-price">
                                     <div class="skeleton-text skeleton"></div>
@@ -403,7 +401,7 @@
                                            ></i>Add to cart</button>
                                 </form>
                                 <div class="single-add-to-wrap">
-                                    <a class="single-add-to-wishlist"><i class="fa fa-heart left"
+                                    <a class="single-add-to-wishlist add-product-love-detail"><i class="fa fa-heart left"
                                             aria-hidden="true"></i><span>Add to Wishlist</span></a>
                                     <a class="single-add-to-compare "><i class="fa fa-refresh left"
                                             aria-hidden="true"></i><span>Add to Compare</span></a>
@@ -435,11 +433,11 @@
                     <ul class="product-content-tabs nav nav-tabs" role="tablist">
 
                         <li class="nav-item">
-                            <a class="active" href="#tab_description" role="tab" data-toggle="tab">Descriptiont</a>
+                            <a class="active" href="#tab_description" role="tab" data-toggle="tab">Mô tả</a>
                         </li>
                        
                         <li class="nav-item">
-                            <a class="" href="#tab_reviews" role="tab" data-toggle="tab">Reviews (<span>3</span>)</a>
+                            <a class="" href="#tab_reviews" role="tab" data-toggle="tab">Đánh giá (<span class="count_comment">3</span>)</a>
                         </li>
                        
 
@@ -508,100 +506,36 @@
                             <div id="tab_reviews-coll" class=" product-collapse collapse container">
                                 <div class="row">
                                     <div class="review-form-wrapper col-md-6">
-                                        <h6 class="review-title">Add a Review </h6>
+                                        <h6 class="review-title">Viết đánh giá sản phẩm </h6>
                                         <form class="comment-form">
                                             <div class="form-field-wrapper">
-                                                <label>Your Rating</label>
+                                                <label>Đánh giá sao</label>
                                                 <p class="stars">
                                                     <span>
-                                                        <a class="star-1" href="#">1</a>
-                                                        <a class="star-2" href="#">2</a>
-                                                        <a class="star-3" href="#">3</a>
-                                                        <a class="star-4 active" href="#">4</a>
-                                                        <a class="star-5" href="#">5</a>
+                                                        <b class=" star_click star-1" href="#">1</b>
+                                                        <b class=" star_click star-2" href="#">2</b>
+                                                        <b class=" star_click star-3" href="#">3</b>
+                                                        <b class=" star_click star-4 " href="#">4</b>
+                                                        <b class=" star_click star-5 " href="#">5</b>
                                                     </span>
                                                 </p>
                                             </div>
                                             <div class="form-field-wrapper">
-                                                <label>Your Review <span class="required">*</span></label>
+                                                <label>Đánh giá của bạn <span class="required">*</span></label>
                                                 <textarea id="comment" class="form-full-width" name="comment" cols="45"
                                                     rows="8" aria-required="true" required=""></textarea>
                                             </div>
-                                            <div class="form-field-wrapper">
-                                                <label>Name <span class="required">*</span></label>
-                                                <input id="author" class="input-md form-full-width" name="author"
-                                                    value="" size="30" aria-required="true" required="" type="text">
-                                            </div>
-                                            <div class="form-field-wrapper">
-                                                <label>Email <span class="required">*</span></label>
-                                                <input id="email" class="input-md form-full-width" name="email" value=""
-                                                    size="30" aria-required="true" required="" type="email">
-                                            </div>
-                                            <div class="form-field-wrapper">
-                                                <input name="submit" id="submit" class="submit btn btn-md btn-color"
-                                                    value="Submit" type="submit">
+                                            <div class="form-field-wrapper submit_comment">
+                                             
                                             </div>
                                         </form>
                                     </div>
                                     <div class="comments col-md-6">
-                                        <h6 class="review-title">Customer Reviews</h6>
+                                        <h6 class="review-title">Đánh giá gần đây</h6>
                                         <!--<p class="review-blank">There are no reviews yet.</p>-->
-                                        <ul class="commentlist">
-                                            <li id="comment-101" class="comment-101">
-                                                <img src="public/client-assets/img/avatar.jpg" class="avatar"
-                                                    alt="author" />
-                                                <div class="comment-text">
-                                                    <div class="star-rating" itemprop="reviewRating" itemscope=""
-                                                        itemtype="http://schema.org/Rating" title="Rated 4 out of 5">
-                                                        <span style="width: 100%"></span>
-                                                    </div>
-                                                    <p class="meta">
-                                                        <strong itemprop="author">James Koster</strong>
-                                                        &nbsp;&mdash;&nbsp;
-                                                        <time itemprop="datePublished" datetime="">April 25, 2016</time>
-                                                    </p>
-                                                    <div class="description" itemprop="description">
-                                                        <p>Wow Amazing!</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li id="102" class="comment-102">
-                                                <img src="public/client-assets/img/avatar.jpg" class="avatar"
-                                                    alt="author" />
-                                                <div class="comment-text">
-                                                    <div class="star-rating" itemprop="reviewRating" itemscope=""
-                                                        itemtype="http://schema.org/Rating" title="Rated 4 out of 5">
-                                                        <span style="width: 80%"></span>
-                                                    </div>
-                                                    <p class="meta">
-                                                        <strong itemprop="author">Michel</strong>
-                                                        &nbsp;&mdash;&nbsp;
-                                                        <time itemprop="datePublished" datetime="">April 14, 2016</time>
-                                                    </p>
-                                                    <div class="description" itemprop="description">
-                                                        <p>Wow Special!</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li id="comment-103" class="comment-103">
-                                                <img src="public/client-assets/img/avatar.jpg" class="avatar"
-                                                    alt="author" />
-                                                <div class="comment-text">
-                                                    <div class="star-rating" itemprop="reviewRating" itemscope=""
-                                                        itemtype="http://schema.org/Rating" title="Rated 4 out of 5">
-                                                        <span style="width: 60%"></span>
-                                                    </div>
-                                                    <p class="meta">
-                                                        <em>Your comment is awaiting approval</em>
-                                                        <!-- <strong itemprop="author">Kerry</strong>
-                                                    &nbsp;&mdash;&nbsp;
-                                                    <time itemprop="datePublished" datetime="">march 19, 2016</time>-->
-                                                    </p>
-                                                    <div class="description" itemprop="description">
-                                                        <p>When an unknown printer took a galley!</p>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                        <ul class="commentlist view_danh_gia">
+                                           
+                                           
                                         </ul>
                                     </div>
                                 </div>

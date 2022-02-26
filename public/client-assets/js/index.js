@@ -52,7 +52,7 @@ async function getProductNew() {
                   </div>
                   <div class="product-button">
                       <a href="#" class="js_tooltip" data-mode="top" data-tip="Add To Cart"><i
-                              class="fa fa-shopping-bag"></i></a>
+                             data-id_sp_add_cart="${val.id}" class="fa fa-shopping-bag click_add_cart" ></i></a>
                       <a href="#" class="js_tooltip" data-mode="top"
                           data-tip="Add To Whishlist"><i class="fa fa-heart"></i></a>
                       <a href="product_detail.html?${val.id}" class="js_tooltip" data-mode="top" data-tip="Quick&nbsp;View"><i
@@ -85,6 +85,8 @@ async function getProductNew() {
     });
     htmls = htmls.join("");
     $("#new-product").innerHTML = htmls;
+    //add cart icon index 
+   
   });
 }
 getProductNew();
@@ -136,7 +138,7 @@ async function getProductFeature() {
                   </div>
                   <div class="product-button">
                       <a href="#" class="js_tooltip" data-mode="top" data-tip="Add To Cart"><i
-                              class="fa fa-shopping-bag"></i></a>
+                            data-id_sp_add_cart="${val.id}"  class="fa fa-shopping-ba click_add_cartg "></i></a>
                       <a href="#" class="js_tooltip" data-mode="top"
                           data-tip="Add To Whishlist"><i class="fa fa-heart"></i></a>
                       <a href="product_detail.html?${val.id}" class="js_tooltip" data-mode="top" data-tip="Quick&nbsp;View"><i
@@ -220,7 +222,7 @@ async function getProductTranding() {
             </div>
             <div class="product-button">
                 <a href="#" class="js_tooltip" data-mode="top" data-tip="Add To Cart"><i
-                        class="fa fa-shopping-bag"></i></a>
+                data-id_sp_add_cart="${val.id}" class="fa fa-shopping-bag" click_add_cart></i></a>
                 <a href="#" class="js_tooltip" data-mode="top" data-tip="Add To Whishlist"><i
                         class="fa fa-heart"></i></a>
                 <a href="product_detail.html?${val.id}" class="js_tooltip" data-mode="top" data-tip="Quick&nbsp;View"><i

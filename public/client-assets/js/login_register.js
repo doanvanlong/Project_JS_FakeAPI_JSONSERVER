@@ -20,13 +20,12 @@ if (localStorage.getItem("login")) {
     <div class="dropdown-menu">
         <ul>
             <li><a href="myorders.html">Đơn hàng của tôi</a></li>
-            <li><a href="#">Sản phẩm yêu thích</a></li>
+            <li><a href="product_love.html">Sản phẩm yêu thích</a></li>
         </ul>
         <span class="divider"></span>
         <ul>
             ${admin}
-            <li><a href="register.html"><i class="fa fa-user left"
-                        aria-hidden="true"></i>Đăng ký</a></li>
+        
              <li><a href="#" id="logout"><i class="fa fa-user left"
                         aria-hidden="true"></i>Đăng xuất</a></li>
         </ul>
@@ -175,3 +174,12 @@ if (localStorage.getItem("login")) {
   registerUser();
 }
 //end kiểm tra login
+//hàm render count sp yêu thích menu
+async function renderProductLove() {
+  if (localStorage.getItem("product_love")) {
+    let love = JSON.parse(localStorage.getItem("product_love"));
+    let count = love.length;
+    $(".countTip").innerText = count;
+  }
+}
+renderProductLove()

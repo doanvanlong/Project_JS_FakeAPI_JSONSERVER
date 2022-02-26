@@ -5655,55 +5655,58 @@ table.shop_attributes td:last-child {
 }
 
 /*Comment Form*/
-.single-product-content .comment-form .stars span a::after,
-.comment-form .stars span a::after {
+.stars span b{
+  cursor: pointer;
+}
+.single-product-content .comment-form .stars span b::after,
+.comment-form .stars span b::after {
   font-family: FontAwesome;
   font-size: 14px;
   line-height: 20px;
 }
 
-.single-product-content .comment-form .stars span a,
-.comment-form .stars span a {
+.single-product-content .comment-form .stars span b,
+.comment-form .stars span b {
   color: #ddd;
 }
 
-.single-product-content .comment-form .stars span a:hover,
-.single-product-content .comment-form .stars span a.active,
-.comment-form .stars span a:hover,
-.comment-form .stars span a.active {
+.single-product-content .comment-form .stars span b:hover,
+.single-product-content .comment-form .stars span b.active,
+.comment-form .stars span b:hover,
+.comment-form .stars span b.active {
   color: #34b79d;
 }
 
-.single-product-content .comment-form .stars span a,
-.comment-form .stars span a {
+.single-product-content .comment-form .stars span b,
+.comment-form .stars span b {
   display: inline-block;
   font-size: 0;
   letter-spacing: 2px;
   margin-right: 20px;
 }
 
-.single-product-content .comment-form .stars span a.star-1::after,
-.comment-form .stars span a.star-1::after {
+.single-product-content .comment-form .stars span b.star-1::after,
+.comment-form .stars span b.star-1::after {
   content: "\f005";
 }
 
-.single-product-content .comment-form .stars span a.star-2::after,
-.comment-form .stars span a.star-2::after {
+.single-product-content .comment-form .stars span b.star-2::after,
+.comment-form .stars span b.star-2::after {
   content: "\f005\f005";
 }
 
-.single-product-content .comment-form .stars span a.star-3::after,
-.comment-form .stars span a.star-3::after {
+.single-product-content .comment-form .stars span b.star-3::after,
+.comment-form .stars span b.star-3::after {
   content: "\f005\f005\f005";
 }
 
-.single-product-content .comment-form .stars span a.star-4::after,
-.comment-form .stars span a.star-4::after {
+.single-product-content .comment-form .stars span b.star-4::after,
+.comment-form .stars span b.star-4::after {
   content: "\f005\f005\f005\f005";
 }
 
-.single-product-content .comment-form .stars span a.star-5::after,
-.comment-form .stars span a.star-5::after {
+.single-product-content .comment-form .stars span b.star-5::after,
+.comment-form .stars span b.star-5::after {
   content: "\f005\f005\f005\f005\f005";
 }
 
